@@ -1,0 +1,11 @@
+p { 
+  color: aqua;
+}
+h1,h2 {
+  font-family: Arial;
+  color: aquamarine;
+ 
+}
+h1 {
+  border-bottom: 1px solid black;
+}
