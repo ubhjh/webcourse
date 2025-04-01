@@ -52,3 +52,10 @@ padding:0;
   border-top-right-radius: 2em;
   border-bottom-left-radius: 2em;
 }
+
+.elixirs {
+	border-width: thin;
+	border-style: solid;
+	border-color: #007e7e;
+  width: 200px;
+}
