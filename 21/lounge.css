@@ -74,19 +74,6 @@ a:visited{
 a:hover {
   color:yellow;
 }
-h1,h2 {
-   font-weight:600;
-}
-
-h1 {
-    font-weight:200;
-}
-.green-font{
-  color: green;
-}
-.red-font{
-  color: red;
-}
-.blue-font{
-  color: blue;
+.elixirs{
+  float: right;
 }
