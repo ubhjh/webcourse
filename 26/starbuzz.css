@@ -21,6 +21,7 @@ header.top {
 }
 
 aside{
+  display: table-cell;
   background:       #efe5d0 url(images/background.gif) bottom right;
   font-size:        105%;
   padding:          15px;
