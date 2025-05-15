@@ -1,9 +1,75 @@
-
-
-
-
-body{
-  background-image: url(./pic/图片7.jpg);
+.image-container {
+  display: flex; /* 使用弹性布局 */
+  justify-content: space-between; /* 使图片之间间距相同 */
+  align-items: center; /* 垂直居中对齐 */
 }
 
+.image-container img {
+  width: 30%; /* 让每张图片占据容器宽度的 30%，可根据需要调整 */
+  height: auto; /* 保持图片的宽高比 */
+}
+.main-image-container {
+  display: flex;
+  flex-direction: column; /* 垂直排列子元素 */
+  align-items: center; /* 水平居中对齐子元素 */
+}
 
+.top-image {
+  width: 130%; /* 可根据需要调整 */
+  height: auto;
+  margin-bottom: 20px; /* 调整图片 5 和下方图片的间距 */
+}
+
+.bottom-images {
+  display: flex;
+  justify-content: space-between; /* 使下方图片间距相同 */
+  width: 100%;
+  margin-bottom: 20px; /* 调整下方三张图片和图片 4 的间距 */
+}
+
+.bottom-images img {
+  width: 30%; /* 让每张图片占据容器宽度的 30%，可根据需要调整 */
+  height: auto;
+}
+
+.bottom-image-4 {
+  width: 140%; /* 可根据需要调整图片 4 的宽度 */
+  height: auto;
+}
+body {
+  background-image:url(pic/图片7.jpg) ;
+}
+/* ... existing code ... */
+
+/* ... existing code ... */
+
+.top-image {
+  width: 120%; 
+  height: auto;
+  margin-bottom: 20px; 
+  /* 应用 SVG 滤镜 */
+  filter: url(#make-white-transparent);
+}
+
+/* ... existing code ... */
+/* ... existing code ... */
+
+.main-image-container {
+  position: relative; /* 设置相对定位，作为子元素绝对定位的参考 */
+}
+
+.top-overlay-image {
+  position: absolute; /* 设置绝对定位 */
+  top: 0; /* 距离容器顶部为 0 */
+  left: 0; /* 距离容器左侧为 0 */
+  z-index: 1; /* 设置层级，确保图片 9 在图片 5 上方 */
+  width: 100%; /* 根据需要调整宽度 */
+  height: auto; /* 保持图片比例 */
+}
+
+.top-image {
+  position: relative; /* 设置相对定位 */
+  z-index: 0; /* 设置层级，确保图片 5 在图片 9 下方 */
+}
+
+/* ... existing code ... */
