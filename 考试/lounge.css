@@ -1,75 +1,94 @@
 .image-container {
-  display: flex; /* 使用弹性布局 */
-  justify-content: space-between; /* 使图片之间间距相同 */
-  align-items: center; /* 垂直居中对齐 */
+  display: flex;
+  justify-content: space-around;
+  margin: 20px auto;
+  max-width: 1200px;
+}
+.image-container img {
+  width: 30%;
+  height: auto;
+  object-fit: contain;
+  margin: 0 10px;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+.top-image {
+  width: 180%;
+  margin-bottom: 20px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .image-container img {
-  width: 30%; /* 让每张图片占据容器宽度的 30%，可根据需要调整 */
-  height: auto; /* 保持图片的宽高比 */
-}
-.main-image-container {
-  display: flex;
-  flex-direction: column; /* 垂直排列子元素 */
-  align-items: center; /* 水平居中对齐子元素 */
-}
-
-.top-image {
-  width: 130%; /* 可根据需要调整 */
+  width: 30%;
   height: auto;
-  margin-bottom: 20px; /* 调整图片 5 和下方图片的间距 */
+  object-fit: contain;
+  margin: 0 10px;
+}
+.bottom-image {
+  width: 180%;
+  margin-top: 20px;
+  display: block;
+  margin-left:-520px;
+  margin-right: auto;
+}
+.quizzes-text {
+  font-size: 24px;
+  text-align: center;
+  margin: 20px 0;
+  font-weight: bold;
+  color: white;
+}
+.hogwarts-banner {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color:white;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 
-.bottom-images {
-  display: flex;
-  justify-content: space-between; /* 使下方图片间距相同 */
-  width: 100%;
-  margin-bottom: 20px; /* 调整下方三张图片和图片 4 的间距 */
+.GetSortedNow{
+  position: absolute;
+  bottom: 620px;
+  right: 380px;
+  padding: 10px 20px;
+  background-color: #5758ff;
+  color: white;
+  font-weight: bold;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  transition:all 0,3s ;
+  margin: 10px;
 }
-
-.bottom-images img {
-  width: 30%; /* 让每张图片占据容器宽度的 30%，可根据需要调整 */
-  height: auto;
-}
-
-.bottom-image-4 {
-  width: 140%; /* 可根据需要调整图片 4 的宽度 */
-  height: auto;
+.GetSortedNow:hover{
+  background-color: #0b163b;
+  border-color: #5758ff;
 }
 body {
-  background-image:url(pic/图片7.jpg) ;
+  background-image: url('pic/图片7.jpg');  /* 缺少分号和引号 */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
 }
-/* ... existing code ... */
-
-/* ... existing code ... */
-
 .top-image {
-  width: 120%; 
-  height: auto;
-  margin-bottom: 20px; 
-  /* 应用 SVG 滤镜 */
-  filter: url(#make-white-transparent);
+  width: 180%;
+  margin-bottom: 20px;
+  mix-blend-mode: multiply;  /* 添加混合模式去除白色 */
+  background-color: transparent;  /* 确保背景透明 */
 }
-
-/* ... existing code ... */
-/* ... existing code ... */
-
-.main-image-container {
-  position: relative; /* 设置相对定位，作为子元素绝对定位的参考 */
-}
-
-.top-overlay-image {
-  position: absolute; /* 设置绝对定位 */
-  top: 0; /* 距离容器顶部为 0 */
-  left: 0; /* 距离容器左侧为 0 */
-  z-index: 1; /* 设置层级，确保图片 9 在图片 5 上方 */
-  width: 100%; /* 根据需要调整宽度 */
-  height: auto; /* 保持图片比例 */
-}
-
-.top-image {
-  position: relative; /* 设置相对定位 */
-  z-index: 0; /* 设置层级，确保图片 5 在图片 9 下方 */
-}
-
-/* ... existing code ... */
