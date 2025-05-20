@@ -77,18 +77,3 @@
   background-color: #0b163b;
   border-color: #5758ff;
 }
-body {
-  background-image: url('pic/图片7.jpg');  /* 缺少分号和引号 */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  margin: 0;
-  padding: 0;
-}
-.top-image {
-  width: 180%;
-  margin-bottom: 20px;
-  mix-blend-mode: multiply;  /* 添加混合模式去除白色 */
-  background-color: transparent;  /* 确保背景透明 */
-}
