@@ -1,62 +1,63 @@
 
-
-/* .image-container {
+.image-container {
   display: flex;
   justify-content: space-around;
   margin: 20px auto;
   max-width: 1200px;
-} */
-/* .image-container img {
+} 
+
+.image-container img {
   width: 30%;
   height: auto;
   object-fit: contain;
   margin: 0 10px;
-} */
-/* .main-container {
+}
+
+.main-container {
   display: flex;
   flex-direction: column;
   max-width: 1200px;
-} */
+}
 
-
-
-/* .image-container {
+.image-container {
   justify-content: space-around;
   width: 100%;
   margin-left: 190px;
   margin-bottom: 5px;
-} */
+}
 
-/* .image-container img {
+.image-container img {
   width: 30%;
   height: auto;
   object-fit: contain;
   margin: 0 10px;
-} */
-/* .bottom-image {
+}
+
+.bottom-image {
   width: 1590px;
   margin-top: 20px;
   display: block;
   margin-left: -10px;
   margin-right: auto;
-} */
-/* .quizzes-text {
+}
+
+.quizzes-text {
   font-size: 24px;
   text-align: center;
   margin: 20px 0;
   font-weight: bold;
   color: white;
-} */
-/* .hogwarts-banner {
+}
+.hogwarts-banner {
   text-align: center;
   font-size: 28px;
   font-weight: bold;
   color:white;
   margin-bottom: 15px;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-} */
+}
 
-/* .GetSortedNow{
+.GetSortedNow{
   position: absolute;
   bottom: 480px;
   right: 380px;
@@ -70,41 +71,41 @@
   cursor: pointer;
   transition:all 0,3s ;
   margin: 10px;
-} */
-/* .GetSortedNow:hover{
+}
+.GetSortedNow:hover{
   background-color: #0b163b;
   border-color: #5758ff;
-} */
-/* .background {
+} 
+ .background {
   background-image: url(pic/图片8.jpg);
-} */
+}
 
 .heng {
-  /* width: 700px;
+  width: 700px;
   margin-left: 130px; 
 }
 
 .gran{
-  /* width: 70px;
-  margin-left: 280px; */
-}
+  width: 70px;
+  margin-left: 280px;
+} 
 
 .la {
-  /* width: 70px;
+  width: 70px;
   margin-left: 390px;
- margin-top: -90px; */
+ margin-top: -90px;
 }
 
 .haff {
-  /* width: 70px;
+  width: 70px;
   margin-left: 503px ;
-  margin-top: -90px; */
+  margin-top: -90px;
 }
 
 .sly {
-  /* width: 70px;
+  width: 70px;
   margin-left: 615px;
-  margin-top: -93px; */
+  margin-top: -93px;
 } 
 
 .yhn {
